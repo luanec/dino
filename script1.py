@@ -3,7 +3,7 @@ import MySQLdb
 
 mydb = MySQLdb.connect(host='localhost',
     user='root',
-    passwd='Energy1290',
+    passwd='password',
     db='test')
 cursor = mydb.cursor()
 cursor.execute("""CREATE TABLE IF NOT EXISTS Temp(
@@ -26,7 +26,7 @@ with open('raw_data.csv') as csvfile:
 #        if row[4] >= '500':
             cursor.execute('INSERT INTO Temp(ts,api_name, mtd, cod)' ' VALUES("%s","%s","%s","%s")' % (row[0],row[1]+' '+row[2],row[3],row[4]) )
             z=row
-print (z[0][0:10])   
+ 
 a=0
 while a<3:
     j=0
