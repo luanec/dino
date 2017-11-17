@@ -2,7 +2,7 @@ import MySQLdb
 
 mydb = MySQLdb.connect(host='localhost',
     user='root',
-    passwd='Energy1290',
+    passwd='password',
     db='test')
 cursor = mydb.cursor()
 cursor.execute("""CREATE TABLE IF NOT EXISTS test(
