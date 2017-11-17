@@ -21,6 +21,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Result (
 
 with open('raw_data.csv') as csvfile:
     csv_data = csv.reader(csvfile)
+    next (csv_data)
     
     for row in csv_data:
 #        if row[4] >= '500':
