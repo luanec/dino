@@ -41,7 +41,6 @@ while a<3:
     a+=1
 
 
-
-#cursor.execute("""DROP TABLE Temp""")
+cursor.execute("""DROP TABLE Temp""")
 mydb.commit()
 cursor.close()
